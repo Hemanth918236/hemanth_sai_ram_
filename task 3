@@ -1,0 +1,21 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt  
+from scipy import stats
+from statistics import mean, median, multimode  
+
+data = [23, 25, 29, 35, 32, 40, 23, 30, 36, 27]
+
+df = pd.Series(data) 
+print("summary statistics:")
+print(df.describe()) 
+
+print("variance:", df.var())  
+
+
+print(f"attribute: data") 
+print(f"mean: {mean(data)}") 
+print(f"median: {median(data)}")
+print(f"mode: {multimode(data)}") 
+
+print()
